@@ -11,14 +11,14 @@ public class Task1 {
 
         Scanner scanner = new Scanner(System.in);
         int num = scanner.nextInt();
-        int secondNum = 15;
+        //int secondNum = 15;
         for (int i = 2; i < num; i++) {
-            if (secondNum % i == 0) {
-                secondNum = i;
+            if (num % i == 0) {
+                num = i;
                 break;
             }
         }
-        System.out.println(secondNum);
+        System.out.println(num);
     }
 }
 
