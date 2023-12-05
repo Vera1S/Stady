@@ -7,22 +7,22 @@ public class Task3 {
     //2. Создать коллекцию лист
     //2.1 Создат пустую коллекцию для сохранения временных переменых
     //3. Создать цикл j < 100 раз (добавить рондомные числа в лист add)
-    //4. Создать цикл i = k.size-1; i >= 0; i--
+    //4. Создать цикл i = k.size-1; i >= 0; i-- (начинать с конца коллекции и вставлять в новый лист с начала)
     //	5. Создать временную переменую = k.get(i)
     //	6. Добавить временную переменную и положить во вр.списое п.2.1
     //7. Вывести список 2.1
     public static void main(String[] args) {
         Random random = new Random();
-        List<Integer> k = new ArrayList<>();
-        List<Integer> h = new ArrayList<>();
+        List<Integer> emptyList = new ArrayList<>();
+        List<Integer> newList = new ArrayList<>();
         for (int j = 0; j < 100; j++) {
-            k.add(random.nextInt());
+            emptyList.add(random.nextInt());
         }
-        for (int i = k.size()-1; i >= 0; i--) {
-            int temp = k.get(i);
-            h.add(temp);
+        for (int i = emptyList.size()-1; i >= 0; i--) {
+            int temp = emptyList.get(i);
+            newList.add(temp);
         }
-        System.out.println(k);
-        System.out.println(h);
+        System.out.println(emptyList);
+        System.out.println(newList);
     }
 }
