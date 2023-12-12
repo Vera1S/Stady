@@ -25,17 +25,19 @@ public class Task6 {
     //выходные данные
     //NO
     //1. Сравнить столбцы со строками.
-    //2. Если строки со столбцами совпадают,  то верно
+    //2. Если строки со столбцами совпадают и совпадают , то верно
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
-        int column = scanner.nextInt();
-        int row = scanner.nextInt();
+        int wColumn = scanner.nextInt();
+        int wRow = scanner.nextInt();
+        int bColumn = scanner.nextInt();
+        int bRow = scanner.nextInt();
 
-        if (column == row){
+        if (wColumn == wRow && bColumn == bRow){
             System.out.println("Yes");
         }else {
-            System.out.println("No");
+            System.out.println("NO");
         }
 
     }
