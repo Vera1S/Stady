@@ -24,8 +24,9 @@ public class Task6 {
     //2
     //выходные данные
     //NO
-    //1. Сравнить столбцы со строками.
-    //2. Если строки со столбцами совпадают и совпадают , то верно
+    //1. Нужно вычесть число 1й колонки из числа  2й колонки (и записать в переменную)
+    //2. Нужно вычесть из 1й строки вычесть другое число строки (и записать в переменную)
+    //3. Если абсолютное значение колонки равна абсолютному значению строки, то верно
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
@@ -34,10 +35,12 @@ public class Task6 {
         int bColumn = scanner.nextInt();
         int bRow = scanner.nextInt();
 
-        if (wColumn == wRow && bColumn == bRow){
+        int resultColumn = wColumn - bColumn;  // или Math.abs(wColumn - bColumn)
+        int resultRow = wRow - bRow;           // Math.abs(wRow - bRow)
+        if (Math.abs(resultColumn) == Math.abs(resultRow)){
             System.out.println("Yes");
         }else {
-            System.out.println("NO");
+            System.out.println("No");
         }
 
     }
