@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Task6 {
     //Требуется определить, бьет ли слон, стоящий на клетке с указанными координатами (номер строки и номер столбца),
     // фигуру, стоящую на другой указанной клетке.
@@ -25,6 +27,16 @@ public class Task6 {
     //1. Сравнить столбцы со строками.
     //2. Если строки со столбцами совпадают,  то верно
     public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+        int column = scanner.nextInt();
+        int row = scanner.nextInt();
+
+        if (column == row){
+            System.out.println("Yes");
+        }else {
+            System.out.println("No");
+        }
 
     }
 }
