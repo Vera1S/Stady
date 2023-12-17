@@ -12,11 +12,11 @@ public class Task8 {
 
     //1. Создать статический метод с аргументами  - это для того, чтобы не создавать отдельный класс
     //(public int perimeter (int width, int length){)
-    //2. Создать переменую resultPer = (width + length) * 2;
+    //2. Создать переменную resultPer = (width + length) * 2;
     //3. Вернуть полученный результат return resultPer;
     //4. Создать метод main в котором будет вызываться метод perimeter
     //5. Создать сканер считывающий введенные числа ширину (width) и длину (length)
-    //6. Создать переменую, в которой будет ссылка на метод perimeter с аргументами
+    //6. Создать переменную, в которой будет ссылка на метод perimeter с аргументами
     //7. И вывод на экран System.out.println("Периметр прямоугольника: " + resultTotal);
 
     public static int perimeter(int width, int length){
@@ -36,3 +36,18 @@ public class Task8 {
     }
 
 }
+//Если через принципы ООП, то тогда нужно:
+//1. Создать класс Perimeter с полями: private int width; private int length;
+//2. Создать конструктор, геттеры, сеттеры
+//3. и метод public int calculatePerimeter() {
+//        return 2 * (width + length);
+//    }
+//4. Создать метод main, в котором будет вызываться метод calculatePerimeter()
+//5. Создать сканер считывающий введенные числа ширину (width) и длину (length)
+//6. Создать объект или экземпляр класса класса Perimeter per = new Perimeter(width, length);
+//7. Вызывать метод calculatePerimeter() на объекте per через точку: (= per.calculatePerimeter();) - который вычисляет периметр
+//   прямоугольника, и возвращает результат в переменую: (resultTotal)
+//8. Создать переменную int resultTotal, которая будет хранить в себе ссылку результата, возвращаемого метода calculatePerimeter(),
+//   присвоенной переменной resultTotal.
+//   Теперь переменная resultTotal содержит значение периметра прямоугольника, рассчитанное методом: int resultTotal = per.calculatePerimeter();
+//9. Вывод на экран System.out.println("Периметр прямоугольника: " + resultTotal);
