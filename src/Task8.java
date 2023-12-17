@@ -51,3 +51,32 @@ public class Task8 {
 //   присвоенной переменной resultTotal.
 //   Теперь переменная resultTotal содержит значение периметра прямоугольника, рассчитанное методом: int resultTotal = per.calculatePerimeter();
 //9. Вывод на экран System.out.println("Периметр прямоугольника: " + resultTotal);
+
+//public class Perimeter {
+//
+//    private int width;
+//    private int length;
+//
+//    public Perimeter(int width, int length) {
+//        this.width = width;
+//        this.length = length;
+//    }
+//
+//    public int calculatePerimeter() {  //пункт 3
+//        return 2 * (width + length);
+//    }
+//
+//    public static void main(String[] args) {
+//        Scanner scanner = new Scanner(System.in);
+//
+//        System.out.println("Введите число width");
+//        int width = scanner.nextInt();
+//        System.out.println("Введите число length");
+//        int length = scanner.nextInt();
+//
+//        Perimeter per = new Perimeter(width, length); //пункт 6
+//        int resultTotal = per.calculatePerimeter();   //пункт 7 и 8
+//
+//        System.out.println("Периметр прямоугольника: " + resultTotal); //пункт 9
+//    }
+//}
