@@ -38,7 +38,7 @@ public class Task8 {
 }
 //Если через принципы ООП, то тогда нужно:
 //1. Создать класс Perimeter с полями: private int width; private int length;
-//2. Создать конструктор, геттеры, сеттеры
+//2. Создать конструктор, геттеры, сеттеры, equals, hashCode, toString
 //3. и метод public int calculatePerimeter() {
 //        return 2 * (width + length);
 //    }
