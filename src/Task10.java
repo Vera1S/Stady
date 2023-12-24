@@ -61,6 +61,31 @@ public class Task10 {
            System.out.print(array[i] + " ");
        }
     }
+
+    //Код с ArrayList
+//    Scanner scanner = new Scanner(System.in);
+//        System.out.print("Введите длину списка: ");
+//    int length = scanner.nextInt();
+//
+//    ArrayList<Integer> arrayList = new ArrayList<>();
+//        arrayList.add(1);
+//        arrayList.add(1);
+//
+//        for (int i = 2; i < length; i++) {
+//        arrayList.add(arrayList.get(i - 1) + arrayList.get(i - 2));
+//    }
+//
+//    // Выводим элементы списка с использованием цикл foreach
+//        System.out.println("Элементы списка:");
+//        for (int value : arrayList) {
+//        System.out.print(value + " ");
+//    }
+    // Пройдем по элементам ArrayList с использованием цикла for
+    //        for (int i = 0; i < arrayList.size(); i++) {
+    //            int value = arrayList.get(i);
+    //            System.out.println(value);
+    //        }
 }
+
 
 
