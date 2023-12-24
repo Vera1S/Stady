@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Task10 {
@@ -34,6 +35,11 @@ public class Task10 {
     //третий элемент массива будет равен: сумме сложения двух чисел, котрый равен двум: array[2] = 1 + 1;
 
     //7. Вывести на экран последний элемент значения
+        //7.1 Для того чтобы элементы массива показались последовательно друг за другом, то нужно преобразовать
+               // массив в строку и вывести с помощью: toString (System.out.println("Элементы массива: " + Arrays.toString(array));)
+       //7.2 Или создать новый цикл для того чтобы дозаписал элементы в массив: for (int i = 0; i < length; i++) {
+
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Введите длину массива: ");
@@ -47,10 +53,13 @@ public class Task10 {
         for (int i = 2; i < length; i++) {
             array[i] = array[i - 1] + array[i - 2];
         }
-        System.out.println("Элементы массива: ");
-        for (int i = 0; i < length; i++) {
-            System.out.print(array[i] + " ");
-        }
+
+        System.out.println("Элементы массива: " + Arrays.toString(array));
+
+       System.out.println("Элементы массива: ");
+       for (int i = 0; i < length; i++) {
+           System.out.print(array[i] + " ");
+       }
     }
 }
 
