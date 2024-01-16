@@ -15,11 +15,10 @@ public class Task9 {
         int hedgehog = scanner.nextInt();
         int box = scanner.nextInt();
 
-        if (box >= hedgehog){
+        if (box >= hedgehog) {
             System.out.println("Ежики в ящике");
-        }else {
+        } else {
             System.out.println("Не все ежики влезли в ящик");
         }
     }
-
 }
