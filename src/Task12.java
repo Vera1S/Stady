@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Task12 {
     //Дано натуральное число N. Найти сумму цифр числа, вычисляющую сумму цифр числа N.
     //
@@ -30,6 +32,14 @@ public class Task12 {
 
     public static void main(String[] args) {
 
+        Scanner scanner = new Scanner(System.in);
+
+
+        public int number(int hundred, int ten, int each){
+            int sc = scanner.nextInt();
+
+
+        }
     }
 
 
